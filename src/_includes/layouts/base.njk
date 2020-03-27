@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snipcart shop with Eleventy</title>
+    <script>document.documentElement.classList.remove('no-js');</script>
+    <link href="https://cdn.snipcart.com/themes/v3.0.10/default/snipcart.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,900&display=swap" rel="stylesheet">
+    <style>{% include "assets/css/main.min.css" %}</style>
+</head>
+<body {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    {% include "partials/siteheader.njk" %}
+    <main class="main"> 
+        {% block content %}{% endblock %}
+    </main>
+    {% include "partials/sitefooter.njk" %}
+</body>
+</html>

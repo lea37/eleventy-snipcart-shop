@@ -1,0 +1,64 @@
+{
+    "products" : [
+        {
+            "id": 1,
+            "price" : "130",
+            "currency": "€",
+            "url": "polaroid",
+            "description": "La culture pop dans un appareil photo. Un appareil photo compact qui a permis aux plus grands nombres de faire de la photo. Le style des années 80, 90 et 00. Des formes rectangulaires aux flashs contextuels, chaque caméra raconte une histoire que vous voudrez partager.",
+            "image": "../images/01.jpg",
+            "name": "Polaroid 600",
+            "credits": "Photo by Yoann Siloine on Unsplash"
+        },
+        {
+            "id": 2,
+            "price" : "250",
+            "currency": "€",
+            "url": "rolleiflex",
+            "description": "Le Rolleiflex est un appareil de format 6x6, enregistrant sur un grand négatif de 56mm par 56mm, qui va donner des images très différentes (et meilleures) que celles que peuvent délivrer la plupart des appareils numériques",
+            "image": "../images/02.jpg",
+            "name": "Rolleiflex",
+            "credits": "Photo by Alexander Andrews on Unsplash"
+        },
+        {
+            "id": 3,
+            "price" : "50",
+            "currency": "€",
+            "url": "canon",
+            "description": "La fin des années cinquante voit le jour du premier reflex Canon. Cette transition d'une dizaine d'année, du télémétrique vers le reflex, permit à Canon de produire ses premiers reflex de qualité, suivit par de nombreux modèles, couvrant les besoins des amateurs et des professionnels de la photographie argentique jusqu'à aujourd'hui.",
+            "image": "../images/03.jpg",
+            "name": "Canon argentique",
+            "credits": "Photo by Yoann Siloine on Unsplash"
+        },
+        {
+            "id": 4,
+            "price" : "300",
+            "currency": "€",
+            "url": "instamatic",
+            "description": "Il s’agit d’un compact produit par la marque Kodak en Allemagne de 1970 à 1971. Il s’utilise avec un format de film un peu différent",
+            "image": "../images/04.jpg",
+            "name": "Kodak instamatic",
+            "credits": "Photo by Jakob Owens on Unsplash"
+        },
+        {
+            "id": 5,
+            "price" : "230",
+            "currency": "€",
+            "url": "ebner",
+            "description": "Les appareils photo Ebner de ce type sont au moins trois. Chacun porte un n° et les différences entre appareil se situent au niveau de l'objectif.",
+            "image": "../images/05.jpg",
+            "name": "Ebner",
+            "credits": "Photo by Alexander Andrews on Unsplash"
+        },
+        {
+            "id": 6,
+            "price" : "125",
+            "currency": "€",
+            "url": "reflekta",
+            "description": " Le Reflekta II ou Reflecta II  était proposé dans un grand nombre de combinaisons Objectif / Obturateur. Il est équipé d'une sécurité contre la double exposition.La mise au point s'effectue en manoeuvrant l'ensemble des deux objectifs simultanément d'avant en arrière à l'aide d'un levier circulaire.",
+            "image": "../images/06.jpg",
+            "name": "Reflekta II",
+            "credits": "Photo by Alexander Andrews on Unsplash"
+        }
+    ]
+}

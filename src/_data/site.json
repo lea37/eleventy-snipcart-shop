@@ -1,0 +1,20 @@
+{
+  "title": "Minimaly Starter Kit",
+  "shortDesc": "Minimaly is a minimal lightweight Eleventy starter kit to help you to create your own blog or personal website.",
+  "url": "https://minimaly.lea-tortay.com",
+  "authorEmail": "leatortay@gmail.com",
+  "authorHandle": "@leatortay",
+  "authorName": "Lea Tortay",
+  "navItems": [
+    {
+      "name": "Boutique",
+      "url": "/shop",
+      "external": false
+    },
+    {
+      "name": "Blog",
+      "url": "/blog",
+      "external": false
+    }
+  ]
+}

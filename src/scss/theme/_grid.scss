@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  grid-gap: 5rem;
+}
+
+.grid > * {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid > * + * {
+  margin-top: 1rem;
+}
+
+@supports (display: grid) {
+  .grid > * {
+    max-width: unset;
+    margin: 0;
+  }
+}

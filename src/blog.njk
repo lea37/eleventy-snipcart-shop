@@ -1,0 +1,19 @@
+---
+templateClass: "blog"
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    <section class="post-wrapper">
+        <div class="inner">
+            <ul>
+                {% for post in collections.posts | reverse %}
+                  <li class="postlist-item">
+                    <a href="{{ post.url | url }}" class="postlist-link">{{ post.data.title }}</a>
+                    <time datetime="{{ post.date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
+                  </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endblock %}

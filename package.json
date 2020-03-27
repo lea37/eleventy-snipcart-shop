@@ -1,0 +1,35 @@
+{
+  "name": "eleventy-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "gulp default & eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "author": "lea tortay",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}

@@ -1,0 +1,44 @@
+.single-product {
+    @media screen and (min-width: 45rem) {
+        margin-top: 72px;
+    }
+
+    .inner {
+        @media screen and (max-width: 54rem) {
+            flex-direction: column;
+        }
+    }
+    
+    &-image,
+    &-content {
+        width: 50%;
+
+        @media screen and (max-width: 54rem) {
+            width: 100%;   
+        }
+    }
+}
+
+.product {
+    &-content {
+        @media screen and (min-width: 54rem) {
+            padding-left: 2em;
+        }
+
+        .title {
+            font-size: 30px;
+            line-height: 48px;
+            font-weight: 900;
+
+            @media screen and (min-width: 54rem) {
+                font-size: 50px;
+                line-height: 70px;
+            }
+        }
+
+        .price {
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+}

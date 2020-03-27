@@ -1,0 +1,21 @@
+.snipcart-modal__container,
+.snipcart-modal,
+.snipcart-cart-header,
+.snipcart-cart__content,
+.snipcart-featured-payment-methods__title {
+    background-color: #fff;
+}
+
+// item
+.snipcart-item-line {
+    border: 1px solid black;
+    margin-bottom: 32px;
+}
+
+// promo button
+.snipcart-discount-box {
+    background-color: transparent;
+}
+.snipcart-discount-box__button {
+    border-color: black;
+}

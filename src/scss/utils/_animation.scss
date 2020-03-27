@@ -1,0 +1,109 @@
+@media screen and (min-width: 54rem) {
+    .t-fade-in {
+        opacity: 0;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        transition: transform .7s $ease-in-out-quad, opacity .7s $ease-in-out-quad;
+
+        &.is-visible {
+            opacity: 1;
+        }
+    }
+
+    .t-translate-down {
+        transform: translate3d(0, 15px, 0);
+        transition: transform .7s $ease-in-out-quad, opacity .7s $ease-in-out-quad;
+        backface-visibility: hidden;
+
+        &.t-translate-full {
+            overflow: hidden;
+            transform: translate3d(0, 100%, 0);
+            transition: transform 1.2s $ease-out-quint, opacity 1.2s $ease-out-quint;
+        }
+
+        &.t-scale {
+            transform: translate3d(0, 15px, 0) scaleY(1.2);
+            transform-origin: 0% 100%;
+        }
+
+        &.is-visible {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .t-translate-up {
+        transform: translate3d(0, -15px, 0);
+        transition: transform .7s $ease-in-out-quad, opacity .7s $ease-in-out-quad;
+        backface-visibility: hidden;
+
+        &.t-translate-full {
+            overflow: hidden;
+            transform: translate3d(0, -100%, 0);
+            transition: transform 1.2s $ease-out-quint, opacity 1.2s $ease-out-quint;
+        }
+
+        &.t-scale {
+            transform: translate3d(0, -15px, 0) scaleY(1.2);
+            transform-origin: 0% 0%;
+        }
+
+        &.is-visible {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .t-translate-right {
+        transform: translate3d(-15px, 0, 0);
+        transition: transform .7s $ease-in-out-quad, opacity .7s $ease-in-out-quad;
+        backface-visibility: hidden;
+
+        &.t-translate-full {
+            overflow: hidden;
+            transform: translate3d(-100%, 0, 0);
+            transition: transform 1.2s $ease-out-quint, opacity 1.2s $ease-out-quint;
+        }
+
+        &.t-scale {
+            transform: translate3d(-15px, 0, 0) scaleY(1.2);
+            transform-origin: 100% 0%;
+        }
+
+        &.is-visible {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .t-translate-left {
+        transform: translate3d(15px, 0, 0);
+        transition: transform .7s $ease-in-out-quad, opacity .7s $ease-in-out-quad;
+        backface-visibility: hidden;
+
+        &.t-translate-full {
+            overflow: hidden;
+            transform: translate3d(100%, 0, 0);
+            transition: transform 1.2s $ease-out-quint, opacity 1.2s $ease-out-quint;
+        }
+
+        &.t-scale {
+            transform: translate3d(15px, 0, 0) scaleY(1.2);
+            transform-origin: 0% 100%;
+        }
+
+        &.is-visible {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .t-zoom-out {
+        img {
+            transform: scale(1.2);
+            transition: transform .7s $ease-in-out-quad, opacity .7s $ease-in-out-quad;
+        }
+
+        &.is-visible {
+            img {
+                transform: scale(1);
+            }
+        }
+    }
+}

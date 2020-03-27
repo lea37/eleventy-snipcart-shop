@@ -1,0 +1,36 @@
+---
+templateClass: "product"
+pagination: 
+    data: products.products
+    size: 1
+    alias: product
+permalink: shop/product/{{product.url}}/index.html
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    <section class="single-product product">
+        <div class="inner u-flex">
+            <div class="single-product-image js-active-on-visible t-fade-in t-translate-down">
+                <div class="frame frame--1-by-1">
+                    <img src="{{ "/" | url }}{{ product.image }}" alt="{{ product.credits }}">
+                </div>
+            </div>
+            <div class="single-product-content product-content">
+                <h1 class="title js-active-on-visible t-fade-in t-translate-down" data-delay="100">{{ product.name }}</h1>
+                <p class="price js-active-on-visible t-fade-in t-translate-down" data-delay="250">{{ product.price }}{{ product.currency }}</p>
+                <p class="desc js-active-on-visible t-fade-in t-translate-down" data-delay="350">{{ product.description }}</p>
+                <button class="snipcart-add-item button js-active-on-visible t-fade-in t-translate-down"
+                  data-delay="500"
+                  data-item-id="{{ product.id }}"
+                  data-item-price="{{ product.price }}"
+                  data-item-url="{{ product.url }}"
+                  data-item-description="{{ product.description }}"
+                  data-item-image="{{ "/" | url }}{{ product.image }}"
+                  data-item-name="{{ product.name }}">
+                  Ajouter au panier
+                </button>
+            </div>
+        </div>
+    </section>
+{% endblock %}

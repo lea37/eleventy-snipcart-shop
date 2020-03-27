@@ -1,0 +1,34 @@
+---
+templateClass: "shop"
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<section class="grid-wrapper">
+  <div class="inner">
+    <h1 class="grid-wrapper-title">Shop</h1>
+  </div>
+  <div class="grid inner u-flex u-flex-wrap">
+    {% for product in products.products %}
+        <div class="card u-flex js-active-on-visible t-fade-in t-translate-down" data-delay="{{ loop.index * 100 }}">
+            <a href="product/{{ product.url }}/index.html" class="no-underline">
+              <div class="frame frame--1-by-1">
+                  <img src="{{ "/" | url }}{{ product.image }}" width="300" loading="auto">
+              </div>
+              <p class="card-title">{{ product.name }} - {{ product.price }}{{ product.currency }}</p>
+              <p class="card-desc">{{ product.description }}</p>
+            </a>
+            <button class="snipcart-add-item button"
+              data-item-id="{{ product.id }}"
+              data-item-price="{{ product.price }}"
+              data-item-url="{{ product.url }}"
+              data-item-description="{{ product.description }}"
+              data-item-image="{{ "/" | url }}{{ product.image }}"
+              data-item-name="{{ product.name }}">
+              Ajouter au panier
+            </button>
+        </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
