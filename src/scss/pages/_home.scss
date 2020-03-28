@@ -1,7 +1,6 @@
 .hero {
-    &__img {
+    &-img {
         width: 48%;
-        position: relative;
 
         img {
             filter: grayscale(1);
@@ -18,7 +17,7 @@
         }
     }
 
-    &__content {
+    &-content {
         width: 50%;
         margin-left: 2em;
 

@@ -9,7 +9,7 @@ templateClass: "blog"
         <div class="inner">
             <ul>
                 {% for post in collections.posts | reverse %}
-                  <li class="postlist-item">
+                  <li class="postlist-item u-flex">
                     <a href="{{ post.url | url }}" class="postlist-link">{{ post.data.title }}</a>
                     <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
                   </li>

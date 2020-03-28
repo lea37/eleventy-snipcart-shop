@@ -14,7 +14,6 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 24px;
         font-weight: 900;
-        text-decoration: none;
 
         @media screen and (min-width: 25rem) {
             font-size: 30px;
@@ -28,7 +27,7 @@
         justify-content: space-between;
     }  
 
-    &__item {
+    &-item {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         
@@ -42,7 +41,7 @@
             margin-left: 32px;
         }
 
-        &:not(&__button) {
+        &:not(&-button) {
             position: relative;
 
             &:after {
@@ -56,7 +55,7 @@
                 will-change: transform;
                 transform-origin: left;
                 transform: scaleX(0);
-                transition: transform 0.4s $ease-custom;
+                transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
             }
             
             &:hover {
