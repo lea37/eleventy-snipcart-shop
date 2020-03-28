@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
+    "build": "gulp default & eleventy",
     "serve": "gulp default & eleventy --serve",
     "debug": "DEBUG=* eleventy"
   },
