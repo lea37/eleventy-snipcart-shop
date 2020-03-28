@@ -1,9 +1,14 @@
 ---
-layout: layouts/base.njk
 templateClass: "post"
 ---
-<h1>{{ title }}</h1>
+{% extends "layouts/base.njk" %}
 
-{{ content | safe }}
-
-<p><a href="{{ '/' | url }}">← Home</a></p>
+{% block content %}
+    <section class="single">
+        <div class="inner">
+            <p><a href="{{ '/' | url }}">← Home</a></p>
+            <h1>{{ title }}</h1>
+            {{ content | safe }}
+        </div>
+    </section>
+{% endblock %}

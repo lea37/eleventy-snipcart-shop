@@ -1,8 +1,4 @@
 .single-product {
-    @media screen and (min-width: 45rem) {
-        margin-top: 72px;
-    }
-
     .inner {
         @media screen and (max-width: 54rem) {
             flex-direction: column;

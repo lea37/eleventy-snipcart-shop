@@ -1,4 +1,5 @@
 ---
+title: Blog
 templateClass: "blog"
 ---
 {% extends "layouts/base.njk" %}
@@ -10,7 +11,7 @@ templateClass: "blog"
                 {% for post in collections.posts | reverse %}
                   <li class="postlist-item">
                     <a href="{{ post.url | url }}" class="postlist-link">{{ post.data.title }}</a>
-                    <time datetime="{{ post.date | date('Y-MM-DD') }}">{{ post.date | date("DD MMMM[,] Y", locale) }}</time>
+                    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
                   </li>
                 {% endfor %}
             </ul>

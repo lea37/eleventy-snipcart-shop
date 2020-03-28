@@ -1,4 +1,5 @@
 ---
+title: Shop
 templateClass: "shop"
 ---
 {% extends "layouts/base.njk" %}
@@ -25,7 +26,7 @@ templateClass: "shop"
               data-item-description="{{ product.description }}"
               data-item-image="{{ "/" | url }}{{ product.image }}"
               data-item-name="{{ product.name }}">
-              Ajouter au panier
+              Add to cart
             </button>
         </div>
     {% endfor %}

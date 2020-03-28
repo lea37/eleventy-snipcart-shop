@@ -1,13 +1,13 @@
 {
-  "title": "Minimaly Starter Kit",
-  "shortDesc": "Minimaly is a minimal lightweight Eleventy starter kit to help you to create your own blog or personal website.",
-  "url": "https://minimaly.lea-tortay.com",
+  "title": "Snipcart & Eleventy demo",
+  "shortDesc": "A shop create with snipcart and eleventy.",
+  "url": "https://snipshop.lea-tortay.com",
   "authorEmail": "leatortay@gmail.com",
   "authorHandle": "@leatortay",
   "authorName": "Lea Tortay",
   "navItems": [
     {
-      "name": "Boutique",
+      "name": "Shop",
       "url": "/shop",
       "external": false
     },

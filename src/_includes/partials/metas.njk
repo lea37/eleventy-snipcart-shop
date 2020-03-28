@@ -1,0 +1,29 @@
+{% set pageTitle = title + ' - ' + site.title %}
+{% set pageDesc = desc %}
+{% set siteTitle = site.title %}
+{% set currentUrl = site.url + page.url %}
+
+<title>{{ pageTitle }}</title>
+<link rel="canonical" href="{{ currentUrl }}" />
+
+<meta property="og:site_name" content="{{ siteTitle }}" />
+<meta property="og:title" content="{{ pageTitle }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ currentUrl }}" />
+
+{% if site.authorHandle %}
+  <meta name="twitter:creator" content="@{{ site.authorHandle | replace('@', '') }}" />
+{% endif %}
+
+{% if pageDesc %}
+  <meta name="description" content="{{ pageDesc }}" />
+  <meta name="twitter:description" content="{{ pageDesc }}" />
+  <meta property="og:description" content="{{ pageDesc }}" />
+{% endif %}
+
+{% if socialImage %}  
+  <meta property="og:image" content="{{ socialImage }}" />
+  <meta name="twitter:image" content="{{ socialImage }}" />
+  <meta property="og:image:alt" content="Page image for {{ site.title }}" />
+  <meta name="twitter:image:alt" content="Page image for {{ site.title }}" />
+{% endif %}

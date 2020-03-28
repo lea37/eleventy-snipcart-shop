@@ -1,16 +1,15 @@
 .hero {
-    @media screen and (min-width: 25rem) {
-        margin-top: 72px;
-    }
-
-
     &__img {
         width: 48%;
         position: relative;
 
+        img {
+            filter: grayscale(1);
+        }
+
         &:after {
             content: '';
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 0, 0, 0.4);
             position: absolute;
             width: 100%;
             height: 100%;
@@ -20,22 +19,12 @@
     }
 
     &__content {
-        font-size: 18px;
-        font-weight: 700;
+        width: 50%;
+        margin-left: 2em;
 
-        @media screen and (min-width: 45rem) {
-            position: absolute;
-            width: 70%;
-            top: 20%;
-            transform: translate3d(0, 20%, 0);
-            right: 20px;
-            width: 70%;
-            z-index: 1;
-        }
-
-        @media screen and (min-width: 54rem) {
-            top: 50%;
-            transform: translate3d(0, -50%, 0);
+        @media screen and (max-width: 54rem) {
+            width: 100%;
+            margin-left: 0;
         }
     }
 }
