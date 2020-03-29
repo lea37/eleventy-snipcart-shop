@@ -1,6 +1,6 @@
 # eleventy-snipcart-shop
 An eleventy + snipcart shop demo. 
-You can read my post about it : https://lea-tortay.com/journal/eleventy-and-snipcart-shop/
+You can read [my post](https://lea-tortay.com/journal/eleventy-and-snipcart-shop/) about how you can add a snipcart checkout.
 
 ## Install
 ```
