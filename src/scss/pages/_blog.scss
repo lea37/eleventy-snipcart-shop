@@ -2,4 +2,18 @@
     justify-content: space-between;
     padding: 16px 0;
     border-bottom: 1px solid black;
+    transition: 0.4s;
+    
+    .postlist-link {
+        transition: 0.4s;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: darken(#efefef, 5%);
+
+        .postlist-link {
+            margin-left: 0.5em;
+        }
+    }
 }

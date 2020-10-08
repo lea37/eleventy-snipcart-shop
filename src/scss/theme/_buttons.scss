@@ -7,6 +7,7 @@ button.button {
     padding: 0.5em 1em;
     transition: all 0.4s linear;
     position: relative;
+    display: inline-block;
 
     @media screen and (min-width: 54rem) {
         padding: 0.5em;

@@ -1,4 +1,8 @@
 .grid-wrapper {
+    h3 {
+        margin: 1em 0;
+    }
+    
     &-title {
         margin: 32px 0;
     }
@@ -14,22 +18,11 @@
             
             .frame {
                 overflow: hidden;
-
-                img {
-                    filter: grayscale(1);
-                    transition: 0.8s cubic-bezier(0, 0, 0.71, 0.56);
-                }
             }
 
             &-title {
                 font-size: 18px;
                 font-weight: 700;
-            }
-
-            &:hover {
-                img {
-                    filter: grayscale(0);
-                }
             }
         }
     }

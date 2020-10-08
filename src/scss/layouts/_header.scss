@@ -1,5 +1,10 @@
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 2em 0;
+    z-index: 2;
 
     .inner {
         flex-direction: column;
@@ -17,6 +22,7 @@
 
         @media screen and (min-width: 25rem) {
             font-size: 30px;
+            line-height: 45px;
         }
     }
 }

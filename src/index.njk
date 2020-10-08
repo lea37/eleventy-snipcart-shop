@@ -5,20 +5,41 @@ templateClass: "home"
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-<div class="hero">
+<section class="hero">
     <div class="inner u-flex">
-        <div class="hero-img u-hide-sm">
-            <div class="frame">
-                <!-- <img src="https://i.pinimg.com/originals/d0/6b/94/d06b946ecc99162ecdafae8825e4053f.gif" alt="organizedneatly.tumblr"> -->
-                <video src="images/ezgif.mp4" title="organizedneatly.tumblr"></video>
-            </div>
-        </div>
         <div class="hero-content">
-            <h1>Snipcart & Eleventy js demo</h1>
-            <p>Since we are all locked inside, i wanted to give first, a cool demo, but also to share a great project that make me happy.</p>
-            <p>The <a href="https://www.facebook.com/travellingathome/" target="_blank" rel="noopener">« travelling at home »</a> project exist for real. It is a virtual walk from Paris (France) to Hobart (Tasmania) throught Google Maps.</p>
-            <p>17 232.8 km2 on the web done by two French artists, Cora Mashed and Julia Drouhin. There is some other great artists projects such as Olivier Hodasaya with is book <a href="">« Eclats d’amérique »</a> or <a href="">« 9-eyes »</a> by Jon Rafman.</p>
+            <h1>Tea time, everywhere</h1>
+            <h2>Find the best tea for your everyday needs and special times.</h2>
+            <a href="/shop" class="button button--full">Discover all tea</a>
         </div>
     </div>
-</div>
+</section>
+<section class="grid-wrapper">
+    <div class="inner">
+        <h3>Our last products :</h3>
+        <div class="grid u-flex u-flex-wrap">
+            {% for product in products.products %}
+                {% if loop.index0 < 3 %}
+                    <div class="card u-flex">
+                        <a href="product/{{ product.url }}/index.html" class="no-underline">
+                            <div class="frame">
+                                <img src="{{ url }}{{ product.image }}" width="300" loading="auto">
+                            </div>
+                            <p class="card-title">{{ product.name }} - {{ product.price }} {{ product.currency }} / 100gr</p>
+                        </a>
+                        <button class="snipcart-add-item button"
+                        data-item-id="{{ product.id }}"
+                        data-item-price="{{ product.price }}"
+                        data-item-url="{{ product.url }}"
+                        data-item-description="{{ product.description }}"
+                        data-item-image="{{ "/" | url }}{{ product.image }}"
+                        data-item-name="{{ product.name }}">
+                        Add to cart
+                        </button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
 {% endblock %}

@@ -2,63 +2,63 @@
     "products" : [
         {
             "id": 1,
-            "price" : "130",
+            "price" : "15",
             "currency": "€",
-            "url": "polaroid",
-            "description": "Pop culture in a camera. The point-and-shoot cameras that brought instant photography to the masses wrapped in the colors and characters that defined the ‘80s, ‘90s, and ‘00s. From boxy shapes to pop-up flashes, each camera tells a story that you’ll want to share.",
-            "image": "../images/01.jpg",
-            "name": "Polaroid 600",
-            "credits": "Photo by Yoann Siloine on Unsplash"
+            "url": "seylan",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "image": "https://images.unsplash.com/photo-1504382103100-db7e92322d39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400",
+            "name": "Seylan",
+            "credits": "Photo by Alison Marras on Unsplash"
         },
         {
             "id": 2,
-            "price" : "250",
+            "price" : "22",
             "currency": "€",
-            "url": "rolleiflex",
-            "description": "A major appeal of Rolleiflex TLR cameras is that they are so well made. Constructed primarily of metal and glass and covered with a luxurious leather skin, Rolleiflex cameras are solid, and feel good in the hands.",
-            "image": "../images/02.jpg",
-            "name": "Rolleiflex",
-            "credits": "Photo by Alexander Andrews on Unsplash"
+            "url": "rose-tea",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat vestibulum lectus mauris ultrices eros in cursus turpis. Justo eget magna fermentum iaculis.",
+            "image": "https://images.unsplash.com/photo-1501841580093-a258b1937efe?ixlib=rb-1.2.1&auto=format&fit=crop&w=400",
+            "name": "Rose tea",
+            "credits": "Photo by Neven Krcmarek on Unsplash"
         },
         {
             "id": 3,
-            "price" : "50",
+            "price" : "18",
             "currency": "€",
-            "url": "canon",
-            "description": "The end of the fifties saw the birth of the first Canon SLR. This decade-long transition from telemetry to DSLR allowed Canon to produce its first quality SLRs, followed by many models, covering the needs of amateurs and professionals in film photography until today.",
-            "image": "../images/03.jpg",
-            "name": "Canon argentique",
-            "credits": "Photo by Yoann Siloine on Unsplash"
+            "url": "black-tea",
+            "description": "Massa sed elementum tempus egestas. Eget nunc lobortis mattis aliquam faucibus purus in massa. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at. Mattis nunc sed blandit libero volutpat sed cras ornare. Sem integer vitae justo eget magna.",
+            "image": "https://images.unsplash.com/photo-1590434434890-eee41ce7d4e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400",
+            "name": "Black tea",
+            "credits": "Photo by Jocelyne Flor on Unsplash"
         },
         {
             "id": 4,
-            "price" : "300",
+            "price" : "20",
             "currency": "€",
-            "url": "instamatic",
-            "description": "It is a compact camera produced by the Kodak brand in Germany from 1970 to 1971. It is used with a slightly different film format",
-            "image": "../images/04.jpg",
-            "name": "Kodak instamatic",
-            "credits": "Photo by Jakob Owens on Unsplash"
+            "url": "earl-grey",
+            "description": "Sed cras ornare arcu dui vivamus arcu felis bibendum. Nullam ac tortor vitae purus faucibus. Sit amet mauris commodo quis imperdiet massa. Praesent semper feugiat nibh sed. Viverra tellus in hac habitasse.",
+            "image": "https://images.unsplash.com/photo-1547149617-609fafa00a6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400",
+            "name": "Earl grey tea",
+            "credits": "Photo by Tina Dawson on Unsplash"
         },
         {
             "id": 5,
-            "price" : "230",
+            "price" : "20",
             "currency": "€",
-            "url": "ebner",
-            "description": "There are at least three Ebner cameras of this type. Each one carries a number and the differences between camera are at the level of the objective.",
-            "image": "../images/05.jpg",
-            "name": "Ebner",
-            "credits": "Photo by Alexander Andrews on Unsplash"
+            "url": "caramel",
+            "description": "A erat nam at lectus. Est velit egestas dui id ornare arcu odio ut. Vestibulum lorem sed risus ultricies tristique nulla aliquet.",
+            "image": "https://images.unsplash.com/photo-1539398100550-fbe9dff24993?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400",
+            "name": "Caramel tea",
+            "credits": "Photo by Oriento on Unsplash"
         },
         {
             "id": 6,
-            "price" : "125",
+            "price" : "35",
             "currency": "€",
-            "url": "reflekta",
-            "description": "The Reflekta II or Reflecta II was offered in a large number of Lens / Shutter combinations. It is equipped with a double exposure safety device.The focusing is carried out by maneuvering the two objectives simultaneously from front to back using a circular lever.",
-            "image": "../images/06.jpg",
-            "name": "Reflekta II",
-            "credits": "Photo by Alexander Andrews on Unsplash"
+            "url": "flower",
+            "description": "Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.",
+            "image": "https://images.unsplash.com/photo-1467164616789-ce7ae65ab4c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400",
+            "name": "Flower tea",
+            "credits": "Photo by Ornella Binni on Unsplash"
         }
     ]
 }
