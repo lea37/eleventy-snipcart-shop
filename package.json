@@ -30,6 +30,6 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
-    "luxon": "^1.22.2"
+    "luxon": "^1.28.1"
   }
 }
